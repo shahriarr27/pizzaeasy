@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PizzaEasy | Find restaurants near you</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="icon" href="assets/images/background/favicon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="Logo">
+          </a>
+        </div>
+      
+        <div class="right-side">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-user-o"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item">
+              
+          <div class="burger">
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="add-rest-1.html" class="menu__link">Add restaurant 1</a>
+              </li>
+              <li class="menu__item">
+                <a href="add-rest-2.html" class="menu__link">Add restaurant 2</a>
+              </li>
+              <li class="menu__item">
+                <a href="browse.html" class="menu__link">Browse restaurant</a>
+              </li>
+              <li class="menu__item">
+                <a href="search.html" class="menu__link active">
+                  Search result</a>
+              </li>
+              <li class="menu__item">
+                <a href="restaurant-details.html" class="menu__link">
+                  restaurant details</a>
+              </li>
+            </ul>
+          </nav>
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <div class="container">
+      <section class="restourant-list">
+        
+        <div class="list-wrapper">
+          <div class="list-inner">
+            <div class="main-heading">
+            <h1>Browse Restaurant</h1>
+            <p class="subtitle text-center">Search result</p>
+          </div>
+            <div class="row">
+              <div class="col-lg-9 col-md-12 order-lg-2">
+                <div class="listings-wrapper">
+                  <div class="grid-short">
+                    <div class="short">
+                      <form action="">
+                        <select name="short" id="">
+                          <option value="">Short By</option>
+                          <option value="">High Price</option>
+                          <option value="">Low Price</option>
+                          <option value="">Latest</option>
+                          <option value="">Order A-Z</option>
+                        </select>
+                      </form>
+                    </div>
+                    <div class="grid-list">
+                      <div class="btn-group">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label id="grid" class="btn active">
+                            <input type="radio" name="layout" id="layout1" checked> <i class="icon- icon-grid_on"></i>
+                          </label>
+                          <label id="list" class="btn">
+                            <input type="radio" name="layout" id="layout2"> <i class="icon- icon-view_list"></i>
+                          </label>
+                        </div>
+                        <div class="show-map">
+                          <button id="map" class="btn open-map">Show Map</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rest-lists">
+                    <div id="restourant-grid" class="restourants">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 map-wrapper mb-4">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14607.599897020727!2d90.38425379716999!3d23.750946087681623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sbd!4v1609477869360!5m2!1sen!2sbd" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/browse-rest-(1).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="open">Open</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/browse-rest-(2).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="closed">Closed</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/browse-rest-(3).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="pre-order">Pre-Order</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/browse-rest-(4).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="open">Open</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/browse-rest-(5).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="open">Open</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/restourant-(3).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="open">Open</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/restourant-(4).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="open">Open</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item list-style col-lg-12 col-md-12 mb-2">
+                          <div class="search-restourant">
+                            <div class="media flex-wrap">
+                              <div class="media-img align-self-center mr-3">
+                                <img class="" src="assets/images/rest-logo/restourant-(5).png" alt="Logo">
+                              </div>
+                              <div class="media-body">
+                                <div class="status-rating-fav">
+                                  <span class="rating small text-center">
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                    <i class="fas fa-star text-yellow"></i>
+                                  </span>
+                                  <div class="status-fav d-flex justify-content-between align-items-center">
+                                    <div class="status">
+                                      <p class="open">Open</p>
+                                    </div>
+                                    <div class="fav">
+                                      <a href="#"><i class="icon icon-heart-o"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="rest-infos">
+                                  <div class="left-side">
+                                    <h4 class="rest-title"><a href="#">KD's Kitchen</a></h4>
+                                    <address>
+                                      Deli, Mediterranean, Barbeque <br> 
+                                      Mayon Quezon City NCR 1114
+                                    </address>
+                                    <div class="rest-availability">
+                                      <div class="delivery">
+                                        <span><i class="icon icon-check_circle"></i>Delivery</span>
+                                      </div>
+                                      <div class="pickup">
+                                        <span><i class="icon icon-check_circle"></i>Pickup</span>
+                                      </div>
+                                      <div class="dine">
+                                        <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="right-side">
+                                      <div class="service-available">
+                                        <ul>
+                                          <li>
+                                            <b>Distance:</b><span class="positive">1.2 miles</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Est:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Distance:</b><span class="negative">N/A</span>
+                                          </li>
+                                          <li>
+                                            <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="payment-details">
+                                  <div class="left-side">
+                                    <ul>
+                                      <li>
+                                        <b>Cash on delivery:</b><span class="positive">Available</span>
+                                      </li>
+                                      <li>
+                                        <b>Credit card:</b><span class="positive">Available</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="right-side">
+                                    <a href="#" class="btn menu-btn">View Menu</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 order-lg-1">
+                <div class="filters">
+                  <div id="filter-wrapper">
+                    <h3><i class="icon icon-filter_list"></i> Filters</h3>
+                    <hr>
+                    <form action="#" method="">
+                      <div class="form-group">
+                        <h4>Search by name</h4>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Enter Location">
+                          <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary "><i class="icon icon-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <h4>Delivery fee</h4>
+                      </div>
+                      <div class="form-group">
+                        <div class="card">
+                          <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                            <div class="title-inner">
+                              <h4>By delivery</h4>
+                            </div>
+                            <div class="icon">
+                              <i class="icon icon-angle-down"></i>
+                            </div>
+                          </div>
+                                
+                          <div id="collapseOne" class="collapse show">
+                            <div class="card-body">
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery1" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery1">Delivery & Pickup</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery2" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery2">Delivery Only</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery3" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery3">Pickup Only</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery4" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery4">Delivery / Pickup / Dinein</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery5" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery5">Delivery & Dinein</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery6" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery6">Pickup & Dinein</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="delivery7" name="delivery" class="custom-control-input">
+                                <label class="custom-control-label" for="delivery7">Dinein Only</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="card">
+                          <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseTwo">
+                            <div class="title-inner">
+                              <h4>By Cuisines</h4>
+                            </div>
+                            <div class="icon">
+                              <i class="icon icon-angle-down"></i>
+                            </div>
+                          </div>
+                          <div id="collapseTwo" class="collapse show">
+                            <div class="card-body">
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines1" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines1">American</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines2" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines2">Deli</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines3" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines3">Indian</label>
+                              </div>
+                              
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines4" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines4">Mediterranean</label>
+                              </div>
+                              
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines5" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines5">Middle</label>
+                              </div>
+                              
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines6" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines6">Eastern</label>
+                              </div>
+                              
+                                  
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines7" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines7">Barbeque</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines8" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines8">Sandwiches</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines9" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines9">Japanese</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines10" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines10">Diner</label>
+                              </div>   
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines11" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines11">Italian</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines12" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines12">Mexican</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines13" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines13">Sushi</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines14" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines14">Burgers</label>
+                              </div>   
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines15" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines15">Greek</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines16" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines16">Vegetarian</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines17" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines17">Thai</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines18" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines18">cscs</label>
+                              </div>     
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines19" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines19">Chinese</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines20" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines20">Healthy</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines21" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines21">Korean</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="cuisines22" name="cuisines" class="custom-control-input">
+                                <label class="custom-control-label" for="cuisines22">Pizza</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="card">
+                          <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseThree">
+                            <div class="title-inner">
+                              <h4> Minimum Delivery</h4>
+                            </div>
+                            <div class="icon">
+                              <i class="icon icon-angle-down"></i>
+                            </div>
+                          </div>
+      
+                          <div id="collapseThree" class="collapse show">
+                            <div class="card-body">
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="mindelivery1" name="mindelivery" class="custom-control-input">
+                                <label class="custom-control-label" for="mindelivery1">&LeftAngleBracket; $5</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="mindelivery2" name="mindelivery" class="custom-control-input">
+                                <label class="custom-control-label" for="mindelivery2">&LeftAngleBracket; $10</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="mindelivery3" name="mindelivery" class="custom-control-input">
+                                <label class="custom-control-label" for="mindelivery3">&LeftAngleBracket; $15</label>
+                              </div>
+                              
+                              <div class="custom-control custom-radio">
+                                <input type="radio" id="mindelivery4" name="mindelivery" class="custom-control-input">
+                                <label class="custom-control-label" for="mindelivery4">&LeftAngleBracket; $20</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+
+
+
+<section class="app-callout">
+  <div class="container">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-lg-5 col-md-5">
+          <img src="assets/images/background/android.png" alt="phone" class="img-fluid">
+        </div>
+        <div class="col-lg-7 col-md-7 align-self-end">
+          <div class="texts">
+            <h4>Hai già la nostra app?</h4>
+            <p>Scarica l’app di Pizza Easy e ordina dove vuoi, qualunque cosa desideri.</p>
+            <div class="buttons">
+              <a href="#"><img src="assets/images/play-store-logo.png" alt="play store"></a>
+              <a href="#"><img src="assets/images/app-store-logo.png" alt="app store"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+          <!-- Upper Box -->
+    <div class="upper-box">
+      <div class="row clearfix">
+        <div class="col-lg-7 col-md-6 col-sm-12">
+          <div class="reg-text">
+            <h4>Unisciti alla famiglia PizzaEasy oggi!</h4>
+            <p>Fai in modo che più persone mangino la tua pizza.È ora di dare impulso al business.Ti aiuteremo a iniziare con gli ordini online entro 24 ore.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 align-self-center">
+          <div class="register-rext">
+            <a href="#">Registrazione ristorante</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="bottom-footer">
+      <div class="row clearfix">
+        <div class="big-column col-lg-4 col-md-12 col-sm-12 mb-3">
+          <div class="footer-widget">
+            <div class="brand-logo">
+              <img src="assets/images/footer-logo.png" alt="Logo" class="img-fluid">
+            </div>
+            <div class="website-intro">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore deleniti aperiam ab corrupti magni!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="big-column col-lg-8 col-md-12 col-sm-12">
+          <div class="row clearfix">
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-widget links-widget">
+                <h5>Città</h5>
+                <ul class="links city">
+                  <li><a href="#">Bologna</a></li>
+                  <li><a href="#">Ferrara</a></li>
+                  <li><a href="#">Genova</a></li>
+                  <li><a href="#">Milano</a></li>
+                  <li><a href="#">Napoli</a></li>
+                  <li><a href="#">Padova</a></li>
+                  <li><a href="#">Palermo</a></li>
+                  <li><a href="#">Parma</a></li>
+                  <li><a href="#">Roma</a></li>
+                  <li><a href="#">Tutte le città</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-widget links-widget">
+                <h5>Chi siamo</h5>
+                <ul class="links">
+                  <li><a href="#">Pizza</a></li>
+                  <li><a href="#">Burger</a></li>
+                  <li><a href="#">HotDog</a></li>
+                  <li><a href="#">Chicken</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-widget links-widget">
+                <h5>Note legali</h5>
+                <ul class="links">
+                  <li><a href="termAndCon.html">Termini & Condizioni</a></li>
+                  <li><a href="#">Informativa sulla privacy</a></li>
+                  <li><a href="#">Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-widget links-widget">
+                <h5>Aiuto</h5>
+                <ul class="links">
+                  <li><a href="#">Contatti</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="#">Mappa del sito</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+      <div class="copyright-inner">
+        <p>&copy; Copyright 2020 Pizzaeasy</p>
+        <div class="social-links">
+          <span>Seguici</span>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+	<a href="#" class="back-to-top">
+    <i class="icon icon-angle-up"></i>
+  </a>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

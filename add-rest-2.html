@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PizzaEasy | Find restaurants near you</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <link rel="icon" href="assets/images/background/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="Logo">
+          </a>
+        </div>
+
+        <div class="right-side">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-user-o"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item">
+
+              <div class="burger">
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+              </div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="add-rest-1.html" class="menu__link">Add restaurant 1</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="add-rest-2.html" class="menu__link active">Add restaurant 2</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="browse.html" class="menu__link">Browse restaurant</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="search.html" class="menu__link">
+                      Search result</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="restaurant-details.html" class="menu__link">
+                      restaurant details</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="registration">
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <div class="container">
+      <section class="restourant-list">
+
+        <div class="list-wrapper">
+          <div class="list-inner">
+            <div class="main-heading">
+              <h1>Add Restaurant</h1>
+            </div>
+            <div class="form-wrapper">
+              <form action="#" method="">
+                <div class="form-group text-right">
+                  <a href="#">Change Package</a>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <label for="">Restaurant Name *</label>
+                      <input type="text" class="form-control" placeholder="Restaurant name" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <label for="">Restaurant Phone *</label>
+                      <input type="text" class="form-control" placeholder="Restaurant number" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <label for="">Contact Name *</label>
+                      <input type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <label for="">Contact Phone *</label>
+                      <input type="text" class="form-control" placeholder="Your number" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Email Address *</label>
+                      <input type="text" class="form-control" placeholder="Enter your email, we will sent an activation code" required>
+                </div>
+                <div class="form-group">
+                  <label>Street Address *</label>
+                  <input type="text" class="form-control mb-3" name="address1" required=""
+                    placeholder="House number and Street name" />
+                  <input type="text" class="form-control" name="address2" required=""
+                    placeholder="Appartments, suite, unit etc ..." />
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="selectwide">
+                        <label class="text-capitalize">Country *</label>
+                        <select class="select2" name="r_country">
+                          <optgroup label="Choose Country">
+                            <option>Canada</option>
+                            <option>Australia</option>
+                            <option>Netherlands</option>
+                            <option>Norway</option>
+                            <option>Italy</option>
+                            <option>Sweden</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="selectwide">
+                        <label class="text-capitalize">State *</label>
+                        <select class="select2" name="r_state">
+                          <optgroup label="Choose State">
+                            <option>Canada</option>
+                            <option>Australia</option>
+                            <option>Netherlands</option>
+                            <option>Norway</option>
+                            <option>Italy</option>
+                            <option>Sweden</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="selectwide">
+                        <label class="text-capitalize">City *</label>
+                        <select class="select2 form-control" name="r_city">
+                          <optgroup label="Choose City">
+                            <option>Canada</option>
+                            <option>Australia</option>
+                            <option>Netherlands</option>
+                            <option>Norway</option>
+                            <option>Italy</option>
+                            <option>Sweden</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="">
+                        <label class="text-capitalize">Zip code *</label>
+                        <input type="text" name="r_zip" class="form-control bg-white shadow-box" placeholder="Zip code">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="text-capitalize">Cuisine</label>
+                  <input type="text" name="r_cusine" class="form-control bg-white shadow-box" placeholder="Please enter cusine type e.g. Chinese">
+                </div>
+                <br><br>
+                <hr>
+                <div class="form-group">
+                  <h5>Login Information</h5>
+                </div>
+                <div class="form-group">
+                  <label for="">Username *</label>
+                  <input type="text" class="form-control" name="" id="" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label for="">Password *</label>
+                  <input type="password" class="form-control" name="" id="" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="">Confirm Password *</label>
+                  <input type="password" class="form-control" name="" id="" placeholder="Confirm password">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary submit-btn">Add Restaurant</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<section id="clients" class="client-subs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-7">
+        <div class="client-carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="media">
+                <div class="media-img align-self-center mr-3">
+                  <img src="assets/images/testimonial/img6.png" alt="" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h4 class="name">Aliya Colemn</h4>
+                  <p class="comment">Allenby Rd, Opposite Forum Shopping Mall Near Northern Park, </p>
+                  <span class="rating small text-center">
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="media">
+                <div class="media-img align-self-center mr-3">
+                  <img src="assets/images/testimonial/img1.png" alt="" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h4 class="name">John Doe</h4>
+                  <p class="comment">Allenby Rd, Opposite Forum Shopping Mall Near Northern Park, </p>
+                  <span class="rating small text-center">
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="media">
+                <div class="media-img align-self-center mr-3">
+                  <img src="assets/images/testimonial/img2.png" alt="" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h4 class="name">Nerin Oly</h4>
+                  <p class="comment">Allenby Rd, Opposite Forum Shopping Mall Near Northern Park, </p>
+                  <span class="rating small text-center">
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 align-self-center">
+        <div class="subscribe">
+          <form action="#">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter email">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="app-callout">
+    <div class="container">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <img src="assets/images/background/android.png" alt="phone" class="img-fluid">
+          </div>
+          <div class="col-lg-7 col-md-7 align-self-end">
+            <div class="texts">
+              <h4>Hai già la nostra app?</h4>
+              <p>Scarica l’app di Pizza Easy e ordina dove vuoi, qualunque cosa desideri.</p>
+              <div class="buttons">
+                <a href="#"><img src="assets/images/play-store-logo.png" alt="play store"></a>
+                <a href="#"><img src="assets/images/app-store-logo.png" alt="app store"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Upper Box -->
+        <div class="upper-box">
+          <div class="row clearfix">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+              <div class="reg-text">
+                <h4>Unisciti alla famiglia PizzaEasy oggi!</h4>
+                <p>Fai in modo che più persone mangino la tua pizza.È ora di dare impulso al business.Ti aiuteremo a
+                  iniziare con gli ordini online entro 24 ore.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 align-self-center">
+              <div class="register-rext">
+                <a href="#">Registrazione ristorante</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="bottom-footer">
+          <div class="row clearfix">
+            <div class="big-column col-lg-4 col-md-12 col-sm-12 mb-3">
+              <div class="footer-widget">
+                <div class="brand-logo">
+                  <img src="assets/images/footer-logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="website-intro">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore deleniti aperiam ab corrupti
+                    magni!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="big-column col-lg-8 col-md-12 col-sm-12">
+              <div class="row clearfix">
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Città</h5>
+                    <ul class="links city">
+                      <li><a href="#">Bologna</a></li>
+                      <li><a href="#">Ferrara</a></li>
+                      <li><a href="#">Genova</a></li>
+                      <li><a href="#">Milano</a></li>
+                      <li><a href="#">Napoli</a></li>
+                      <li><a href="#">Padova</a></li>
+                      <li><a href="#">Palermo</a></li>
+                      <li><a href="#">Parma</a></li>
+                      <li><a href="#">Roma</a></li>
+                      <li><a href="#">Tutte le città</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Chi siamo</h5>
+                    <ul class="links">
+                      <li><a href="#">Pizza</a></li>
+                      <li><a href="#">Burger</a></li>
+                      <li><a href="#">HotDog</a></li>
+                      <li><a href="#">Chicken</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Note legali</h5>
+                    <ul class="links">
+                      <li><a href="termAndCon.html">Termini & Condizioni</a></li>
+                      <li><a href="#">Informativa sulla privacy</a></li>
+                      <li><a href="#">Cookies</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Aiuto</h5>
+                    <ul class="links">
+                      <li><a href="#">Contatti</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="#">Mappa del sito</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="copyright">
+          <div class="copyright-inner">
+            <p>&copy; Copyright 2020 Pizzaeasy</p>
+            <div class="social-links">
+              <span>Seguici</span>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <a href="#" class="back-to-top">
+    <i class="icon icon-angle-up"></i>
+  </a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

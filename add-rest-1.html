@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PizzaEasy | Find restaurants near you</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="icon" href="assets/images/background/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="Logo">
+          </a>
+        </div>
+
+        <div class="right-side">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-user-o"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item">
+
+              <div class="burger">
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+              </div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="add-rest-1.html" class="menu__link active">Add restaurant 1</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="add-rest-2.html" class="menu__link">Add restaurant 2</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="browse.html" class="menu__link">Browse restaurant</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="search.html" class="menu__link">
+                      Search result</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="restaurant-details.html" class="menu__link">
+                      restaurant details</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <div class="container">
+      <section class="restourant-list">
+
+        <div class="list-wrapper">
+          <div class="list-inner">
+            <div class="main-heading">
+              <h1>Iscriviti e unisciti alla Famiglia PizzaEasy</h1>
+              <p class="subtitle text-center">Aumenta le tue vendite fino al 25% grazie alle gestione online di ordini e
+                prenotazioni.</p>
+            </div>
+            <div class="specifications">
+              <div class="row">
+                <div class="col-lg-6 col-md-4 align-self-center">
+                  <div class="left-side">
+                    <div class="free-img">
+                      <p class="text">Free</p>
+                      <svg width="100%" height="200px" class="top">
+                        <path id="Tracciato 218" class="shp0"
+                          d="M80.5 7C89.79 7 136.29 -0.95 127.13 26.32C123.4 55.68 153 64.12 153 89.5C153 110.78 118.5 116.26 106.81 130.97C93.61 147.59 101.84 172 80.5 172C40.46 172 8 135.06 8 89.5C8 64.39 27 53.3 42.59 38.13C55.22 25.84 62.52 7 80.5 7Z" />
+                      </svg>
+                      <svg width="100%" height="200px" class="middle">
+                        <path id="Tracciato 217" class="shp1"
+                          d="M80.5 6.5C89.79 6.5 136.29 -1.45 127.13 25.82C123.4 55.18 153 63.62 153 89C153 110.28 118.5 115.76 106.81 130.47C93.61 147.09 101.84 171.5 80.5 171.5C40.46 171.5 8 134.56 8 89C8 63.89 27 52.8 42.59 37.63C55.22 25.34 62.52 6.5 80.5 6.5Z" />
+                      </svg>
+                      <svg width="100%" height="200px" class="bottom">
+                        <path id="Tracciato 219" class="shp2"
+                          d="M81 6.5C90.29 6.5 136.79 -1.45 127.63 25.82C123.9 55.18 153.5 63.62 153.5 89C153.5 110.28 119 115.76 107.31 130.47C94.11 147.09 102.34 171.5 81 171.5C40.96 171.5 8.5 134.56 8.5 89C8.5 63.89 27.5 52.8 43.09 37.63C55.72 25.34 63.02 6.5 81 6.5Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-8 ">
+                  <div class="right-side">
+                    <ul class="speci-list">          
+                      <li><i class="icon icon-check_circle"></i><span>Ordini illimitati</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Prenotazioni illimitate.</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Niente commissioni per ordine</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Niente commissioni per prenotazione</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Nessuna tassa mensile</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Nessun contratto</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Nessuna carta di credito</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Nessun costo di attivazione</span></li>
+                      <li><i class="icon icon-check_circle"></i><span>Nessun costo nascosto</span></li>
+                    </ul>
+                    <a href="add-rest-2.html" class="sign-up-btn">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<section class="intro">
+  <div class="bg"></div>
+  <div class="container">
+    <div class="intro-wrapper">
+      <div class="section-heading">
+        <h3 class="text-center">Come funziona Pizzaeasy </h3>
+      </div>
+      <div class="steps">
+        <div class="step-box">
+          <h4>Iscriviti</h4>
+          <p>Crea  il tuo profilo e  conferma la tua identità  </p>
+        </div>
+        <div class="step-box">
+          <h4>Fai il Setup</h4>
+          <p>Completa  le impostazioni, carica il tuo menu e dillo ai tuoi clienti</p>
+        </div>
+        <div class="step-box">
+          <h4>Vendi</h4>
+          <p>Raggiungi nuovi potenziali clienti + visibilità + venditè</p>
+        </div>
+      </div>
+      <div class="button text-center mt-4">
+        <a href="add-rest-2.html" class="sign-up-btn">Sign Up</a>
+      </div>
+
+      <br><br><br>
+      <div class="about">
+        <div class="section-heading mb-5">
+          <h3 class="text-center">Come funziona Pizzaeasy </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="left-side">
+              <ul class="steps-list">
+                <h4 class="list-title">PANNELLO DI CONTROLLO (APP IOS /ANDROID)</h4>       
+                <li>Utilizza la nostra app per ristoranti,</li>
+                <li> ricevi le ordinazioni e le prenotazioni online</li>
+                <li>puoi accettare gli ordini in arrivo con il tuo smartphone</li>
+                <br>
+                <h4 class="list-title">PANNELLO DI CONTROLLO (WEP)</h4>       
+                <li>Gestione semplificata degli articoli</li>
+                <li>Gestione sottocategorie per componenti aggiuntivi</li>
+                <li>Gestione formati ad es. Piccolo, medio, grande ecc …</li>
+                <li>gestione tempi di cottura ad es. bencotto o medio ecc ..</li>
+                <li>
+                  Gestisci indirizzo, tasse, spese di spedizione, messaggio di ricevuta ecc.
+                  </li>
+                <li>Gestione notifiche in tempo reale. Invia una notifica e-mail o sms </li>
+                <li></li>
+                <br>
+                <h4 class="list-title">METODI DI PAGAMENTO</h4>
+                <li>Accetta il pagamento tramite paypal. PAGAMENTO DIRETTO</li>
+                <li>puoi impostare il paypal su sandbox per il test.</li>
+                <li>Accetta il pagamento utilizzando carte di credito offline</li>
+                <li>Accetta il pagamento in contanti
+                </li>
+
+                <br>
+
+                <h4 class="list-title">REPORT</h4>
+                <li>Rapporti di vendite</li>
+                <li>Report delle vendite per articolo</li>
+                <li>Report di riepilogo delle vendite</li>
+                <li>Tutti i report possono essere esportati in file excel csv</li>
+
+                <br>
+                <h4 class="list-title">GRAFICI</h4>
+                <li>Grafici di vendita degli ultimi 30 giorni</li>
+                <li>Grafici di vendita per articolo</li>
+                <li>Crea codici promozionali, </li>
+                <li>controlla le vendite, </li>
+                <li>modifica il tuo menu e altro ancora. </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 align-self-center">
+            <div class="right-side">
+              <div class="img-container text-lg-center">
+                <img src="assets/images/about.png" alt="" class="img-fluid">
+              </div>
+              <div class="button text-center mt-4">
+                <a href="add-rest-2.html" class="sign-up-btn">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="payment-security">
+  <div class="container">
+    <div class="inner-wrapper">
+      <div class="section-heading mb-5">
+        <h3 class="text-center">Easy and secure payment</h3>
+      </div>
+      <div class="payments-system">
+        <div class="system-box">
+          <div class="icon-box mb-1">
+            <img src="assets/images/payments.png" class="img-fluid" alt="">
+          </div>
+          <h4>Metodi di pagamento affidabili</h4>
+          <p>Paga con Visa, Mastercard o PayPal</p>
+        </div>
+        <div class="system-box">
+          <div class="icon-box mb-1">
+            <img src="assets/images/icon-1.png" class="img-fluid" alt="">
+          </div>
+          <h4>Pagamenti sicuri </h4>
+          <p>Elaborato in un ambiente conforme</p>
+        </div>
+        <div class="system-box">
+          <div class="icon-box mb-1">
+            <img src="assets/images/icon-2.png" class="img-fluid" alt="">
+          </div>
+          <h4>Annulla in qualsiasi momento</h4>
+          <p>Annullare l’iscrizione è semplice e veloce</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="clients" class="client-subs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-7">
+        <div class="client-carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="media">
+                <div class="media-img align-self-center mr-3">
+                  <img src="assets/images/testimonial/img6.png" alt="" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h4 class="name">Aliya Colemn</h4>
+                  <p class="comment">Allenby Rd, Opposite Forum Shopping Mall Near Northern Park, </p>
+                  <span class="rating small text-center">
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="media">
+                <div class="media-img align-self-center mr-3">
+                  <img src="assets/images/testimonial/img1.png" alt="" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h4 class="name">John Doe</h4>
+                  <p class="comment">Allenby Rd, Opposite Forum Shopping Mall Near Northern Park, </p>
+                  <span class="rating small text-center">
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="media">
+                <div class="media-img align-self-center mr-3">
+                  <img src="assets/images/testimonial/img2.png" alt="" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h4 class="name">Nerin Oly</h4>
+                  <p class="comment">Allenby Rd, Opposite Forum Shopping Mall Near Northern Park, </p>
+                  <span class="rating small text-center">
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star text-yellow"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 align-self-center">
+        <div class="subscribe">
+          <form action="#">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter email">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="app-callout">
+    <div class="container">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <img src="assets/images/background/android.png" alt="phone" class="img-fluid">
+          </div>
+          <div class="col-lg-7 col-md-7 align-self-end">
+            <div class="texts">
+              <h4>Hai già la nostra app?</h4>
+              <p>Scarica l’app di Pizza Easy e ordina dove vuoi, qualunque cosa desideri.</p>
+              <div class="buttons">
+                <a href="#"><img src="assets/images/play-store-logo.png" alt="play store"></a>
+                <a href="#"><img src="assets/images/app-store-logo.png" alt="app store"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Upper Box -->
+        <div class="upper-box">
+          <div class="row clearfix">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+              <div class="reg-text">
+                <h4>Unisciti alla famiglia PizzaEasy oggi!</h4>
+                <p>Fai in modo che più persone mangino la tua pizza.È ora di dare impulso al business.Ti aiuteremo a
+                  iniziare con gli ordini online entro 24 ore.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 align-self-center">
+              <div class="register-rext">
+                <a href="#">Registrazione ristorante</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="bottom-footer">
+          <div class="row clearfix">
+            <div class="big-column col-lg-4 col-md-12 col-sm-12 mb-3">
+              <div class="footer-widget">
+                <div class="brand-logo">
+                  <img src="assets/images/footer-logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="website-intro">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore deleniti aperiam ab corrupti
+                    magni!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="big-column col-lg-8 col-md-12 col-sm-12">
+              <div class="row clearfix">
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Città</h5>
+                    <ul class="links city">
+                      <li><a href="#">Bologna</a></li>
+                      <li><a href="#">Ferrara</a></li>
+                      <li><a href="#">Genova</a></li>
+                      <li><a href="#">Milano</a></li>
+                      <li><a href="#">Napoli</a></li>
+                      <li><a href="#">Padova</a></li>
+                      <li><a href="#">Palermo</a></li>
+                      <li><a href="#">Parma</a></li>
+                      <li><a href="#">Roma</a></li>
+                      <li><a href="#">Tutte le città</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Chi siamo</h5>
+                    <ul class="links">
+                      <li><a href="#">Pizza</a></li>
+                      <li><a href="#">Burger</a></li>
+                      <li><a href="#">HotDog</a></li>
+                      <li><a href="#">Chicken</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Note legali</h5>
+                    <ul class="links">
+                      <li><a href="termAndCon.html">Termini & Condizioni</a></li>
+                      <li><a href="#">Informativa sulla privacy</a></li>
+                      <li><a href="#">Cookies</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Aiuto</h5>
+                    <ul class="links">
+                      <li><a href="#">Contatti</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="#">Mappa del sito</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="copyright">
+          <div class="copyright-inner">
+            <p>&copy; Copyright 2020 Pizzaeasy</p>
+            <div class="social-links">
+              <span>Seguici</span>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <a href="#" class="back-to-top">
+    <i class="icon icon-angle-up"></i>
+  </a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+    integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

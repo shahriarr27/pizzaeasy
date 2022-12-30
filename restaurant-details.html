@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PizzaEasy | Find restaurants near you</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="icon" href="assets/images/background/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="Logo">
+          </a>
+        </div>
+
+        <div class="right-side">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-user-o"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon icon-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item">
+
+              <div class="burger">
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+                <div class="burger__patty"></div>
+              </div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="add-rest-1.html" class="menu__link">Add restaurant 1</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="add-rest-2.html" class="menu__link">Add restaurant 2</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="browse.html" class="menu__link">Browse restaurant</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="search.html" class="menu__link">
+                      Search result</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="restaurant-details.html" class="menu__link active">
+                      restaurant details</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <div class="rest-details">
+      <div class="rest-whole-wrapper">
+        <div class="rest-banner">
+          <div class="overlay"></div>
+          <div class="rest-center">
+            <div class="restaurant-info">
+              <div class="media flex-wrap">
+                <div class="media-img align-self-center">
+                  <img class="" src="assets/images/rest-logo/restourant-(1).png" alt="Logo">
+                </div>
+                <div class="media-body">
+                  <div class="status-rating-fav">
+                    <h4 class="rest-title">KD's Kitchen</h4>
+                    <div class="status-fav d-flex justify-content-between align-items-center">
+                      <div class="status">
+                        <p class="open">Open</p>
+                      </div>
+                      <div class="fav">
+                        <a href="#"><i class="icon icon-heart-o"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <address>
+                    Deli, Mediterranean, Barbeque <br>
+                    Mayon Quezon City NCR 1114
+                  </address>
+                </div>
+              </div>
+
+              <div class="rest-availability">
+                <span class="rating small text-center">
+                  <i class="fas fa-star text-yellow"></i>
+                  <i class="fas fa-star text-yellow"></i>
+                  <i class="fas fa-star text-yellow"></i>
+                  <i class="fas fa-star text-yellow"></i>
+                  <i class="fas fa-star text-yellow"></i>
+                </span>
+                <div class="delivery">
+                  <span><i class="icon icon-check_circle"></i>Delivery</span>
+                </div>
+                <div class="pickup">
+                  <span><i class="icon icon-check_circle"></i>Pickup</span>
+                </div>
+                <div class="dine">
+                  <span><i class="icon icon-check_circle"></i>Dine-in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="container">
+            <div class="main-tabs">
+              <ul class="nav nav-tabs" id="restTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="menu-tab" data-toggle="tab" href="#menu" role="tab">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="book-tab" data-toggle="tab" href="#book" role="tab">Book</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab">Info</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab">Review</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content-wrapper">
+              <div class="row">
+                <div class="col-lg-8 col-md-12">
+                  <div class="tab-content" id="rest-tab-contents">
+                    <div class="tab-pane fade show active" id="menu" role="tabpanel">
+                      <!-- Menus -->
+                      <div class="content-widget">
+                        <div class="content-heading position-relative mb-3">
+                          <h6
+                            class="text-yellow position-relative m-0 text-capitalize border d-inline-block rounded p-3 bg-white small font-weight-bold">
+                            Menus</h6>
+                        </div>
+                        <div class="content-box">
+                          <div class="row">
+                            <!-- Card -->
+                            <div class="col-lg-6 col-md-12">
+                              <div class="pointer">
+                                <div class="flip-box menu">
+                                  <div class="flip-box-inner">
+                                    <div class="flip-box-front text-center p-4">
+                                      <img src="assets/images/starter.png" class="menu-title" alt="img">
+                                      <div class="img-thumbnail mt-3 mb-3 rounded-pill overflow-hidden shadow-box">
+                                        <img src="assets/images/menu-1.jpg" class="h-100" alt="img">
+                                      </div>
+                                      <h1 class="font-weight-bold"><span class="text-yellow">40%</span> off</h1>
+                                      <a href="#" class="text-yellow text-decoration-none">See Details</a>
+                                    </div>
+                                    <div class="flip-box-back p-3">
+                                      <div class="category-column">
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk1" checked>
+                                              <label class="custom-control-label item-name" for="cbk1">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk2">
+                                              <label class="custom-control-label item-name" for="cbk2">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk3">
+                                              <label class="custom-control-label item-name" for="cbk3">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk4">
+                                              <label class="custom-control-label item-name" for="cbk4">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk5">
+                                              <label class="custom-control-label item-name" for="cbk5">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk6">
+                                              <label class="custom-control-label item-name" for="cbk6">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Card -->
+                            <div class="col-lg-6 col-md-12">
+                              <div class="pointer">
+                                <div class="flip-box menu">
+                                  <div class="flip-box-inner">
+                                    <div class="flip-box-front text-center p-4">
+                                      <img src="assets/images/dessert.png" class="menu-title" alt="img">
+                                      <div class="img-thumbnail mt-3 mb-3 rounded-pill overflow-hidden shadow-box">
+                                        <img src="assets/images/menu-2.jpg" class="h-100" alt="img">
+                                      </div>
+                                      <h1 class="font-weight-bold"><span class="text-yellow">40%</span> off</h1>
+                                      <a href="#" class="text-yellow text-decoration-none">See Details</a>
+                                    </div>
+                                    <div class="flip-box-back p-3">
+                                      <div class="category-column">
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk1" checked>
+                                              <label class="custom-control-label item-name" for="cbk1">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk2">
+                                              <label class="custom-control-label item-name" for="cbk2">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk3">
+                                              <label class="custom-control-label item-name" for="cbk3">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk4">
+                                              <label class="custom-control-label item-name" for="cbk4">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk5">
+                                              <label class="custom-control-label item-name" for="cbk5">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk6">
+                                              <label class="custom-control-label item-name" for="cbk6">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Card -->
+
+                            <div class="col-lg-6 col-md-12">
+                              <div class="pointer">
+                                <div class="flip-box menu">
+                                  <div class="flip-box-inner">
+                                    <div class="flip-box-front text-center p-4">
+                                      <img src="assets/images/drinks.png" class="menu-title" alt="img">
+                                      <div class="img-thumbnail mt-3 mb-3 rounded-pill overflow-hidden shadow-box">
+                                        <img src="assets/images/menu-3.jpg" class="h-100" alt="img">
+                                      </div>
+                                      <h1 class="font-weight-bold"><span class="text-yellow">40%</span> off</h1>
+                                      <a href="#" class="text-yellow text-decoration-none">See Details</a>
+                                    </div>
+                                    <div class="flip-box-back p-3">
+                                      <div class="category-column">
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk1" checked>
+                                              <label class="custom-control-label item-name" for="cbk1">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk2">
+                                              <label class="custom-control-label item-name" for="cbk2">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk3">
+                                              <label class="custom-control-label item-name" for="cbk3">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk4">
+                                              <label class="custom-control-label item-name" for="cbk4">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk5">
+                                              <label class="custom-control-label item-name" for="cbk5">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk6">
+                                              <label class="custom-control-label item-name" for="cbk6">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Card -->
+
+                            <div class="col-lg-6 col-md-12">
+                              <div class="pointer">
+                                <div class="flip-box menu">
+                                  <div class="flip-box-inner">
+                                    <div class="flip-box-front text-center p-4">
+                                      <img src="assets/images/extras.png" class="menu-title" alt="img">
+                                      <div class="img-thumbnail mt-3 mb-3 rounded-pill overflow-hidden shadow-box">
+                                        <img src="assets/images/menu-4.jpg" class="h-100" alt="img">
+                                      </div>
+                                      <h1 class="font-weight-bold"><span class="text-yellow">40%</span> off</h1>
+                                      <a href="#" class="text-yellow text-decoration-none">See Details</a>
+                                    </div>
+                                    <div class="flip-box-back p-3">
+                                      <div class="category-column">
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk1" checked>
+                                              <label class="custom-control-label item-name" for="cbk1">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk2">
+                                              <label class="custom-control-label item-name" for="cbk2">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk3">
+                                              <label class="custom-control-label item-name" for="cbk3">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk4">
+                                              <label class="custom-control-label item-name" for="cbk4">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk5">
+                                              <label class="custom-control-label item-name" for="cbk5">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Item -->
+                                        <div class="pb-2 pt-2 d-block text-decoration-none text-reset">
+                                          <div class="check-types">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="cbk6">
+                                              <label class="custom-control-label item-name" for="cbk6">
+                                                <span class="text-left text-white title text-capitalize">fruit
+                                                  cakes</span>
+                                                <div class="price">
+                                                  <span class="icon icon-long-arrow-right arrow-right"></span>
+                                                  <span class="text-white text-right float-right">$10</span>
+                                                </div>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="book" role="tabpanel">
+                      <div class="booking-rest">
+                        <div class="content-heading position-relative mb-3">
+                          <h6
+                            class="text-yellow position-relative m-0 text-capitalize border d-inline-block rounded p-3 bg-white small font-weight-bold">
+                            Book</h6>
+                        </div>
+                        <div class="widget-content">
+                          <form name="form" autocomplete="off">
+                            <div class="form-group mt-4">
+                              <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                  <input type="text" placeholder="Your name" class="form-control" name="name">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                  <input type="text" placeholder="Contact no." class="form-control" name="contact">
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="form-group mt-4">
+
+                            </div>
+                            <div class="form-group mt-4">
+                              <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                  <label class="small text-black-50">No. of Children</label>
+                                  <input type="number" placeholder="No. of children" class="form-control"
+                                    name="children">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                  <label class="small text-black-50">No. of Adults</label>
+                                  <input type="number" placeholder="No. of adults" class="form-control" name="adults">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                  <label class="small text-black-50">Your email</label>
+                                  <input type="text" placeholder="Your email" class="form-control" name="email">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                  <label class="small text-black-50">Choose date</label>
+                                  <input size="16" type="text" placeholder="Choose date" readonly
+                                    class="form-control bg-white form_datetime">
+                                </div>
+                              </div>
+                            </div>
+                            <a href="#" class="btn btn-book">Book now</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="info" role="tabpanel">
+                      <div class="info-contents">
+                        <!-- Description -->
+                        <div class="content-widget">
+                          <div class="content-heading position-relative mb-3">
+                            <h6
+                              class="text-yellow position-relative m-0 text-capitalize border d-inline-block rounded p-3 bg-white small font-weight-bold">
+                              description</h6>
+                          </div>
+                          <div class="content-box">
+                            <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <p class="description">
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                              anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                              accusantium doloremque laudantium, totam rem aperiam.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- Gallery -->
+                        <div class="content-widget pt-4">
+                          <div class="content-heading position-relative mt-3 mb-3">
+                            <h6
+                              class="text-yellow position-relative m-0 text-capitalize border d-inline-block rounded p-3 bg-white small font-weight-bold">
+                              gallery</h6>
+                          </div>
+                          <div class="content-box">
+                            <div class="row">
+                              <!-- Column 1 -->
+                              <div class="col-md-6">
+                                <div class="mt-3 img-box bg-white">
+                                  <a class="fancybox" rel="group" href="assets/images/restaurant-thumbnail-1.jpg"><img
+                                      src="assets/images/restaurant-thumbnail-1.jpg" class="img-fluid" alt="img" /></a>
+                                </div>
+                                <div class="mt-3 img-box bg-white">
+                                  <a class="fancybox" rel="group" href="assets/images/restaurant-thumbnail-2.jpg"><img
+                                      src="assets/images/restaurant-thumbnail-2.jpg" class="img-fluid" alt="img" /></a>
+                                </div>
+                                <div class="mt-3 img-box bg-white">
+                                  <a class="fancybox" rel="group" href="assets/images/restaurant-thumbnail-3.jpg"><img
+                                      src="assets/images/restaurant-thumbnail-3.jpg" class="img-fluid" alt="img" /></a>
+                                </div>
+                              </div>
+
+                              <!-- Column 2 -->
+                              <div class="col-md-6">
+                                <div class="mt-3 img-box bg-white">
+                                  <a class="fancybox" rel="group" href="assets/images/restaurant-thumbnail-3.jpg"><img
+                                      src="assets/images/restaurant-thumbnail-3.jpg" class="img-fluid" alt="img" /></a>
+                                </div>
+                                <div class="mt-3 img-box bg-white">
+                                  <a class="fancybox" rel="group" href="assets/images/restaurant-thumbnail-2.jpg"><img
+                                      src="assets/images/restaurant-thumbnail-2.jpg" class="img-fluid" alt="img" /></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="review" role="tabpanel">
+                      <div class="rating-whole">
+
+                        <!-- Reviews -->
+                        <div class="content-widget pt-4">
+                          <div class="content-heading mt-3 position-relative mb-3">
+                            <h6
+                              class="text-yellow position-relative m-0 text-capitalize border d-inline-block rounded p-3 bg-white small font-weight-bold">
+                              reviews</h6>
+                          </div>
+                          <div class="content-box">
+                            <div class="customer-reviews">
+
+                              <!-- Review -->
+                              <div class="review p-4 position-relative shadow-box mt-4">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <img src="assets/images/insta-5.jpg" alt="customer" class="img-fluid">
+                                  </div>
+                                  <div class="col-md-9">
+                                    <div class="position-relative">
+                                      <span class="d-block text-uppercase font-weight-bold mb-2">Gregg Fencova</span>
+                                      <!-- Rating -->
+                                      <div class="rating small">
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <label class="text-uppercase font-weight-bold">overall
+                                          rating</label>
+                                      </div>
+                                      <small>March 25, 2020 @ 9:34pm</small>
+                                      <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="comment-actions p-3">
+                                  <a href="#">reply</a>
+                                </div>
+                                <hr>
+                                <div class="static-rating">
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small
+                                        class="text-uppercase pl-2 pr-2 font-weight-bold">sitting</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small class="text-uppercase pl-2 pr-2 font-weight-bold">food</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small
+                                        class="text-uppercase pl-2 pr-2 font-weight-bold">service</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Review Reply -->
+                              <div class="review p-4 ml-5 position-relative shadow-box mt-4">
+                                
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <img src="assets/images/insta-5.jpg" alt="customer" class="img-fluid">
+                                  </div>
+                                  <div class="col-md-9">
+                                    <div class="position-relative">
+                                      <span class="d-block text-uppercase font-weight-bold mb-2">Gregg Fencova</span>
+                                      <!-- Rating -->
+                                      <div class="rating small">
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <label class="text-uppercase font-weight-bold">overall
+                                          rating</label>
+                                      </div>
+                                      <small>March 25, 2020 @ 9:34pm</small>
+                                      <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="comment-actions p-3">
+                                  <a href="#">reply</a>
+                                </div>
+                                <hr>
+                                <div class="static-rating">
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small
+                                        class="text-uppercase pl-2 pr-2 font-weight-bold text-yellow">sitting</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small class="text-uppercase pl-2 pr-2 font-weight-bold text-yellow">food</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small
+                                        class="text-uppercase pl-2 pr-2 font-weight-bold text-yellow">service</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-sta"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Review -->
+                              <div class="review p-4 position-relative shadow-box mt-4">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <img src="assets/images/insta-5.jpg" alt="customer" class="img-fluid">
+                                  </div>
+                                  <div class="col-md-9">
+                                    <div class="position-relative">
+                                      <span class="d-block text-uppercase font-weight-bold mb-2">Gregg Fencova</span>
+                                      <!-- Rating -->
+                                      <div class="rating small">
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star text-yellow"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <label class="text-uppercase font-weight-bold">overall
+                                          rating</label>
+                                      </div>
+                                      <small>March 25, 2020 @ 9:34pm</small>
+                                      <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="comment-actions p-3">
+                                  <a href="#">reply</a>
+                                </div>
+                                <hr>
+                                <div class="static-rating">
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small
+                                        class="text-uppercase pl-2 pr-2 font-weight-bold">sitting</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small class="text-uppercase pl-2 pr-2 font-weight-bold">food</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="d-inline-flex align-items-center pr-3">
+                                    <div class="rating small">
+                                      <small
+                                        class="text-uppercase pl-2 pr-2 font-weight-bold">service</small>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star text-yellow"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Add Review -->
+                        <div class="content-widget add-review pt-4">
+                          <div class="content-heading mt-3 position-relative mb-3">
+                            <h6
+                              class="text-yellow position-relative m-0 text-capitalize border d-inline-block rounded p-3 bg-white small font-weight-bold">
+                              add review</h6>
+                          </div>
+                          <div class="content-box">
+                            <form name="form" autocomplete="off">
+                              <div class="form-group mt-4">
+                                <input type="text" placeholder="Your name"
+                                  class="form-control" name="name">
+                              </div>
+                              <div class="form-group mt-4">
+                                <input type="text" placeholder="Your email"
+                                  class="form-control" name="email">
+                              </div>
+                              <div class="form-group mt-4">
+                                <input type="text" placeholder="Contact no."
+                                  class="form-control" name="contact">
+                              </div>
+                              <div class="form-group mt-4">
+                                <textarea class="form-control" rows="6"
+                                  placeholder="Description"></textarea>
+                              </div>
+
+                              <!-- Rating -->
+                              <div class="live-rating mt-4">
+                                <h5
+                                  class="widget-heading position font-weight-bold position-relative mt-5 text-capitalize">
+                                  rate our service</h5>
+
+                                <div class="row">
+                                  <!-- Rating -->
+                                  <div class="col-md-6">
+                                    <div class="w-100 pt-3 pr-3">
+                                      <h6 class="text-capitalize pr-3 font-weight-bold d-inline-block">environment</h6>
+                                      <div class="rating-stars d-inline-block">
+                                        <ul class="stars">
+                                          <li class="star selected" title="Poor" data-value="1">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Fair" data-value="2">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Good" data-value="3">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Excellent" data-value="4">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="WOW!!!" data-value="5">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="col-md-6">
+                                    <div class="w-100 pt-3 pr-3">
+                                      <h6 class="text-capitalize pr-3 font-weight-bold d-inline-block">Sitting</h6>
+                                      <div class="rating-stars d-inline-block">
+                                        <ul class="stars">
+                                          <li class="star selected" title="Poor" data-value="1">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star selected" title="Fair" data-value="2">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star selected" title="Good" data-value="3">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star selected" title="Excellent" data-value="4">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="WOW!!!" data-value="5">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="col-md-6">
+                                    <div class="w-100 pt-3 pr-3">
+                                      <h6 class="text-capitalize pr-3 font-weight-bold d-inline-block">Service</h6>
+                                      <div class="rating-stars d-inline-block">
+                                        <ul class="stars">
+                                          <li class="star selected" title="Poor" data-value="1">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star selected" title="Fair" data-value="2">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Good" data-value="3">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Excellent" data-value="4">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="WOW!!!" data-value="5">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Rating -->
+                                  <div class="col-md-6">
+                                    <div class="w-100 pt-3 pr-3">
+                                      <h6 class="text-capitalize pr-3 font-weight-bold d-inline-block rate-heading">Food
+                                      </h6>
+                                      <div class="rating-stars d-inline-block">
+                                        <ul class="stars">
+                                          <li class="star" title="Poor" data-value="1">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Fair" data-value="2">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Good" data-value="3">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="Excellent" data-value="4">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                          <li class="star" title="WOW!!!" data-value="5">
+                                            <i class="fa fa-star fa-fw"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="#" class="btn btn-review mt-4">submit review</a>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <div class="order-side">
+                    <div class="widget-box">
+                      <div class="delivery-box">
+                        <h4>Delivery Info</h4>
+                        <hr>
+                        <div class="service-available">
+                          <ul>
+                            <li>
+                              <b>Distance:</b><span class="positive">1.2 miles</span>
+                            </li>
+                            <li>
+                              <b>Delivery Est:</b><span class="negative">N/A</span>
+                            </li>
+                            <li>
+                              <b>Delivery Distance Covered:</b><span class="negative">N/A</span>
+                            </li>
+                            <li>
+                              <b>Delivery Fee:</b><span class="positive">Free Delivery</span>
+                            </li>
+                          </ul>
+                          <div class="button-div text-center">
+                            <a href="#">[Change your address here]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-box">
+                      <div class="order-box">
+                        <h4>Your Order</h4>
+                        <hr>
+                        <div class="widget-content">
+                          <div class="order py-3">
+                            <a href="#" class="font-weight-bold text-yellow text-uppercase">Special Cheese Pizza</a>
+                            <i class="remove-order text-danger fas fa-times float-right"></i>
+                            <span class="float-right text-muted">$40</span>
+                            <p class="description">Topping with extra olives, cheese</p>
+                          </div>
+                          <div class="order py-3">
+                            <a href="#" class="font-weight-bold text-yellow text-uppercase">Molten Lava cake</a>
+                            <i class="remove-order text-danger fas fa-times float-right"></i>
+                            <span class="float-right text-muted">$40</span>
+                            <p class="description">Topping with extra olives, cheese</p>
+                          </div>
+                          <div class="order py-3">
+                            <a href="#" class="font-weight-bold text-yellow text-uppercase">Chocolate fudge</a>
+                            <i class="remove-order text-danger fas fa-times float-right"></i>
+                            <span class="float-right text-muted">$40</span>
+                            <p class="description">Topping with extra olives, cheese</p>
+                          </div>
+                          <div class="order py-3">
+                            <a href="#" class="font-weight-bold text-reset text-capitalize">Delivery charges</a>
+                            <span class="float-right text-muted">$40</span>
+                            <p class="text-danger">Inclusive of all Taxes</p>
+                          </div>
+                          <br>
+                          <span class="font-weight-bold text-uppercase text-yellow">Total</span>
+                          <span class="font-weight-bold text-yellow float-right">$100</span>
+                          <div class="form-group">
+                            <label class="small text-black-50">Pick delivery date</label>
+                            <input size="16" type="text" placeholder="Choose Date" readonly
+                              class="form-control bg-white form_datetime">
+                          </div>
+                          <a href="#" class="btn order-btn">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-box">
+                      <div class="contact-box">
+                        <h4>Contact Info</h4>
+                        <hr>
+                        <div class="contact-info">
+                          <ul>
+                            <li>
+                              <span class="icon-box"><i class="icon icon-room"></i> </span>
+                              <p>89 Hill Road, Folsome Street 3H California, United States</p>
+                            </li>
+                            <li>
+                              <span class="icon-box"><i class="icon icon-phone"></i></span>
+                              <p>+22 123 456 7</p>
+                            </li>
+                            <li>
+                              <span class="icon-box"><i class="icon icon-envelope-o"></i></span>
+                              <p>queries@restaurant.com</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <section class="app-callout">
+    <div class="container">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <img src="assets/images/background/android.png" alt="phone" class="img-fluid">
+          </div>
+          <div class="col-lg-7 col-md-7 align-self-end">
+            <div class="texts">
+              <h4>Hai già la nostra app?</h4>
+              <p>Scarica l’app di Pizza Easy e ordina dove vuoi, qualunque cosa desideri.</p>
+              <div class="buttons">
+                <a href="#"><img src="assets/images/play-store-logo.png" alt="play store"></a>
+                <a href="#"><img src="assets/images/app-store-logo.png" alt="app store"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Upper Box -->
+        <div class="upper-box">
+          <div class="row clearfix">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+              <div class="reg-text">
+                <h4>Unisciti alla famiglia PizzaEasy oggi!</h4>
+                <p>Fai in modo che più persone mangino la tua pizza.È ora di dare impulso al business.Ti aiuteremo a
+                  iniziare con gli ordini online entro 24 ore.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 align-self-center">
+              <div class="register-rext">
+                <a href="#">Registrazione ristorante</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="bottom-footer">
+          <div class="row clearfix">
+            <div class="big-column col-lg-4 col-md-12 col-sm-12 mb-3">
+              <div class="footer-widget">
+                <div class="brand-logo">
+                  <img src="assets/images/footer-logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="website-intro">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore deleniti aperiam ab corrupti
+                    magni!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="big-column col-lg-8 col-md-12 col-sm-12">
+              <div class="row clearfix">
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Città</h5>
+                    <ul class="links city">
+                      <li><a href="#">Bologna</a></li>
+                      <li><a href="#">Ferrara</a></li>
+                      <li><a href="#">Genova</a></li>
+                      <li><a href="#">Milano</a></li>
+                      <li><a href="#">Napoli</a></li>
+                      <li><a href="#">Padova</a></li>
+                      <li><a href="#">Palermo</a></li>
+                      <li><a href="#">Parma</a></li>
+                      <li><a href="#">Roma</a></li>
+                      <li><a href="#">Tutte le città</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Chi siamo</h5>
+                    <ul class="links">
+                      <li><a href="#">Pizza</a></li>
+                      <li><a href="#">Burger</a></li>
+                      <li><a href="#">HotDog</a></li>
+                      <li><a href="#">Chicken</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Note legali</h5>
+                    <ul class="links">
+                      <li><a href="termAndCon.html">Termini & Condizioni</a></li>
+                      <li><a href="#">Informativa sulla privacy</a></li>
+                      <li><a href="#">Cookies</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Aiuto</h5>
+                    <ul class="links">
+                      <li><a href="#">Contatti</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="#">Mappa del sito</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="copyright">
+          <div class="copyright-inner">
+            <p>&copy; Copyright 2020 Pizzaeasy</p>
+            <div class="social-links">
+              <span>Seguici</span>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <a href="#" class="back-to-top">
+    <i class="icon icon-angle-up"></i>
+  </a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
